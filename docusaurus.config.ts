@@ -32,11 +32,13 @@ const config: Config = {
       "classic",
       {
         docs: {
-          id: "workshop-series",
-          path: "docs/workshop-series",
+          id: "discover-program-template-project",
+          path: "docs/discover-program-template-project",
           routeBasePath: "/",
 
-          sidebarPath: require.resolve("./sidebars.workshop-series.ts"),
+          sidebarPath: require.resolve(
+            "./sidebars.discover-program-template-project.ts"
+          ),
           editUrl:
             "https://github.com/DISC-NU/DISC-Documentation-Website/tree/main",
         },
@@ -62,12 +64,10 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "discover-program-template-project",
-        path: "docs/discover-program-template-project",
-        routeBasePath: "discover-program-template-project",
-        sidebarPath: require.resolve(
-          "./sidebars.discover-program-template-project.ts"
-        ),
+        id: "workshop-series",
+        path: "docs/workshop-series",
+        routeBasePath: "workshop-series",
+        sidebarPath: require.resolve("./sidebars.workshop-series.ts"),
       },
     ],
   ],
@@ -91,8 +91,8 @@ const config: Config = {
           type: "doc",
           docId: "intro",
           position: "left",
-          label: "Workshop Series",
-          docsPluginId: "workshop-series",
+          label: "RSAE CCP",
+          docsPluginId: "discover-program-template-project",
         },
         {
           type: "doc",
@@ -105,8 +105,8 @@ const config: Config = {
           type: "doc",
           docId: "intro",
           position: "left",
-          label: "Discover Program",
-          docsPluginId: "discover-program-template-project",
+          label: "Workshop Series",
+          docsPluginId: "workshop-series",
         },
         {
           href: "https://github.com/DISC-NU/DISC-Documentation-Website",
@@ -122,7 +122,7 @@ const config: Config = {
           title: "Documentation",
           items: [
             {
-              label: "Workshop Series",
+              label: "RSAE CCP",
               to: "/",
             },
             {
@@ -130,8 +130,8 @@ const config: Config = {
               href: "/disc-website/intro",
             },
             {
-              label: "Discover Program Template",
-              to: "/discover-program-template-project/intro",
+              label: "Workshop Series",
+              to: "/workshop-series/intro",
             },
           ],
         },

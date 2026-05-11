@@ -1,48 +1,92 @@
 ---
 id: intro
-title: DISCover Program Template Project
+title: RSAE Community Compensation Portal
 sidebar_position: 1
 ---
 
-# DISCover Program Template Project
+# RSAE Community Crowdsourcing Platform
 
-Welcome to the DISCover Program Template Project documentation! This template serves as the foundation for all web applications developed during the DISC Discover Program, ensuring consistency and quality across team projects.
+This documentation covers the RSAE Community Crowdsourcing Platform, a web application for collecting, reviewing, and tracking community proposals. The project is split into a frontend application for the user experience and a backend API for authentication, data access, and admin workflows.
 
 ## Overview
 
-The DISCover Program Template Project provides a standardized web application structure that combines modern technologies and best practices. It consists of two main components:
+The portal currently supports a few core flows:
 
-- **Frontend Template**: A React-based application template with pre-configured routing, styling, and authentication
-- **Backend Template**: An Express.js server template with database integration, authentication, and API scaffolding
+- Community members can submit proposals through the public-facing form
+- Visitors can browse submitted ideas
+- Logged-in users can access admin-oriented views like the dashboard and audit log
+- The backend stores proposal, comment, user, and audit log data in AWS MySQL
 
-## Why a Standard Template?
-
-This template was created to:
-
-- Ensure consistent development practices across all Discover Program teams
-- Reduce initial setup time for new projects
-- Provide a solid foundation with industry-standard tools and practices
-- Make it easier for tech leads to support multiple teams effectively
+At a high level, the frontend handles routing, page rendering, and user interactions, while the backend exposes REST endpoints and connects the app to Firebase authentication and the database.
 
 ## Tech Stack
 
-Our template uses a modern JavaScript/TypeScript stack:
-
 ### Frontend
 
-- React for UI components
-- React Router v7 for navigation
-- styled-components for styling
-- Firebase for authentication
+- React
+- Vite
+- React Router
+- styled-components
+- Firebase Authentication
 
 ### Backend
 
-- Node.js and Express for the server
-- PostgreSQL (via AWS) for database
-- ESLint and Prettier for code formatting
+- Node.js
+- Express
+- Firebase Admin SDK
+- AWS RDS / MySQL
 
-### Development Tools
+### Documentation
 
-- Git for version control
-- VS Code as the recommended editor
-- ESLint + Prettier for consistent code formatting
+- Docusaurus
+
+## How To Run
+
+To work on the full app locally, run the frontend and backend in separate terminals.
+
+### 1. Start the backend
+
+Open the backend project:
+
+```bash
+cd rsae-ccp-be
+```
+
+Install dependencies if needed:
+
+```bash
+npm install
+```
+
+Start the backend server:
+
+```bash
+npm run dev
+```
+
+### 2. Start the frontend
+
+Open the frontend project in a second terminal:
+
+```bash
+cd rsae-ccp-fe
+```
+
+Install dependencies if needed:
+
+```bash
+npm install
+```
+
+Start the frontend development server:
+
+```bash
+npm run dev
+```
+
+### 3. Verify both apps are running
+
+- The frontend should be available on the Vite dev URL shown in the terminal, usually `http://localhost:5173`
+- The backend should be running on the configured API port, commonly `http://localhost:5050`
+
+Make sure both projects have their environment variables configured before starting them.
