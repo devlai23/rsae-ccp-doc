@@ -39,8 +39,8 @@ The project follows a modular structure:
 
 ## Quick Links
 
-- 📚 [Getting Started](/installation)
-- 🏗️ [Project Overview & Quick Start](/quick-start)
-- 📝 [Content Structure](/project-structure)
-- 🚀 [Installation Guide](/installation)
-- 👥 [Contributing Guidelines](/contributing)
+- 📚 [Getting Started](/workshop-series/installation)
+- 🏗️ [Project Overview & Quick Start](/workshop-series/quick-start)
+- 📝 [Content Structure](/workshop-series/project-structure)
+- 🚀 [Installation Guide](/workshop-series/installation)
+- 👥 [Contributing Guidelines](/workshop-series/contributing)

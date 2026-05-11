@@ -131,7 +131,7 @@ const config: Config = {
             },
             {
               label: "Workshop Series",
-              to: "/workshop-series/intro",
+              to: "/workshop-series/",
             },
           ],
         },

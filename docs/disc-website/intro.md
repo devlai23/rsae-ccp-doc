@@ -42,9 +42,9 @@ src/
 ## Next Steps
 
 - [Getting Started](/getting-started.md) - Installation and setup
-- [Project Structure](/project-structure.md) - Detailed directory overview
+- [Project Structure](/disc-website/project-structure) - Detailed directory overview
 - [Components](/components.md) - Component documentation
-- [Contributing](/contributing.md) - How to contribute
+- [Contributing](/disc-website/contributing) - How to contribute
 
 ## Need Help?
 
