@@ -1,6 +1,6 @@
 ---
 id: intro
-title: RSAE Community Compensation Portal
+title: RSAE Community Crowdsourcing Platform
 sidebar_position: 1
 slug: /
 ---
