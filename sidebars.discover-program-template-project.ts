@@ -65,6 +65,11 @@ const discoverProgramSidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "backend/authentication",
+          label: "Authentication",
+        },
+        {
+          type: "doc",
           id: "backend/development",
           label: "Development Guide",
         },

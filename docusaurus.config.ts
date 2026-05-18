@@ -33,7 +33,7 @@ const config: Config = {
       {
         docs: {
           id: "discover-program-template-project",
-          path: "docs/discover-program-template-project",
+          path: "docs/rsae-ccp",
           routeBasePath: "/",
 
           sidebarPath: require.resolve(
