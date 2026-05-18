@@ -60,6 +60,11 @@ const discoverProgramSidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
+          id: "backend/getting-started",
+          label: "Getting Started",
+        },
+        {
+          type: "doc",
           id: "backend/project-structure",
           label: "Project Structure",
         },
@@ -77,11 +82,6 @@ const discoverProgramSidebar: SidebarsConfig = {
           type: "doc",
           id: "backend/deployment",
           label: "Deployment",
-        },
-        {
-          type: "doc",
-          id: "backend/contributing",
-          label: "Contributing",
         },
       ],
     },

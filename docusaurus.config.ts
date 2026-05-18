@@ -51,27 +51,6 @@ const config: Config = {
     ],
   ],
 
-  plugins: [
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "disc-website",
-        path: "docs/disc-website",
-        routeBasePath: "disc-website",
-        sidebarPath: require.resolve("./sidebars.disc-website.ts"),
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "workshop-series",
-        path: "docs/workshop-series",
-        routeBasePath: "workshop-series",
-        sidebarPath: require.resolve("./sidebars.workshop-series.ts"),
-      },
-    ],
-  ],
-
   themeConfig: {
     image: "img/docusaurus-social-card.jpg",
     colorMode: {
@@ -95,20 +74,6 @@ const config: Config = {
           docsPluginId: "discover-program-template-project",
         },
         {
-          type: "doc",
-          docId: "intro",
-          position: "left",
-          label: "DISC Website",
-          docsPluginId: "disc-website",
-        },
-        {
-          type: "doc",
-          docId: "intro",
-          position: "left",
-          label: "Workshop Series",
-          docsPluginId: "workshop-series",
-        },
-        {
           href: "https://github.com/DISC-NU/DISC-Documentation-Website",
           label: "GitHub",
           position: "right",
@@ -124,14 +89,6 @@ const config: Config = {
             {
               label: "RSAE CCP",
               to: "/",
-            },
-            {
-              label: "DISC Website",
-              href: "/disc-website/intro",
-            },
-            {
-              label: "Workshop Series",
-              to: "/workshop-series/",
             },
           ],
         },
