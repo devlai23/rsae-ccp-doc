@@ -103,5 +103,5 @@ See [Project Structure](./project-structure.md) for detailed information.
 
 - Review the [Project Structure](./project-structure.md)
 - Read the [Development Guide](./development.md)
-- Check the [Contributing Guidelines](./contributing.md)
+<!-- - Check the [Contributing Guidelines](./contributing.md) -->
 - Learn about [Deployment](./deployment.md)
