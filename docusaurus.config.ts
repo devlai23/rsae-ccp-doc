@@ -33,7 +33,7 @@ const config: Config = {
       {
         docs: {
           id: "discover-program-template-project",
-          path: "docs/discover-program-template-project",
+          path: "docs/rsae-ccp",
           routeBasePath: "/",
 
           sidebarPath: require.resolve(
@@ -48,27 +48,6 @@ const config: Config = {
           customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
-    ],
-  ],
-
-  plugins: [
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "disc-website",
-        path: "docs/disc-website",
-        routeBasePath: "disc-website",
-        sidebarPath: require.resolve("./sidebars.disc-website.ts"),
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "workshop-series",
-        path: "docs/workshop-series",
-        routeBasePath: "workshop-series",
-        sidebarPath: require.resolve("./sidebars.workshop-series.ts"),
-      },
     ],
   ],
 
@@ -95,20 +74,6 @@ const config: Config = {
           docsPluginId: "discover-program-template-project",
         },
         {
-          type: "doc",
-          docId: "intro",
-          position: "left",
-          label: "DISC Website",
-          docsPluginId: "disc-website",
-        },
-        {
-          type: "doc",
-          docId: "intro",
-          position: "left",
-          label: "Workshop Series",
-          docsPluginId: "workshop-series",
-        },
-        {
           href: "https://github.com/DISC-NU/DISC-Documentation-Website",
           label: "GitHub",
           position: "right",
@@ -124,14 +89,6 @@ const config: Config = {
             {
               label: "RSAE CCP",
               to: "/",
-            },
-            {
-              label: "DISC Website",
-              href: "/disc-website/intro",
-            },
-            {
-              label: "Workshop Series",
-              to: "/workshop-series/",
             },
           ],
         },
