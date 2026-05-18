@@ -12,23 +12,22 @@ The frontend template follows a modular React architecture designed for scalabil
 
 ```bash
 frontend/
-├── public/           # Static files
-├── src/             # Source code
-│   ├── assets/      # Static assets
-│   │   └── icons/   # SVG icons
-│   ├── common/      # Shared resources
-│   │   ├── components/
-│   │   ├── contexts/
-│   │   ├── hooks/
-│   │   ├── layouts/
-│   │   └── utils/
-│   ├── pages/       # Page components
-│   │   ├── account/
-│   │   ├── home/
-│   │   └── not-found/
-│   ├── App.css      # Global styles
-│   └── App.jsx      # Root component
-└── README.md        # Documentation
+├── public/                # Static assets served at the root path 
+├── src/                   # Source code
+│   ├── assets/            # Static media (images, icons)
+│   ├── common/            # Shared React resources
+│   │   ├── components/    # Reusable UI categorized by type
+│   │   ├── contexts/      # Global state and contexts
+│   │   ├── hooks/         # Custom React hooks
+│   │   └── layouts/       # Structural layout wrappers
+│   ├── pages/             # Route-specific page components
+│   ├── utils/             # Global utility functions
+│   ├── App.css            # Global styles
+│   ├── App.jsx            # Root component and router
+│   ├── firebase-config.js # Firebase initialization
+│   ├── index.css          # Tailwind/base style imports
+│   └── main.jsx           # React DOM rendering entry point
+└── README.md              # Documentation
 ```
 
 ## Core Directories
@@ -39,44 +38,61 @@ The source directory contains all application code, organized into specific subd
 
 ### `assets/`
 
-Contains static files that are not code. You will create this folder:
+Contains static files that are not code.
 
-- `icons/`: SVG icon files used throughout the application
-- Images, fonts, and other media files
+- `icons/`: SVG icon files used throughout the application.
+- Images, fonts, and other media files.
+- Global branding icons/images (logos, backgrounds, login icons).
 
 ### `common/`
 
 Houses shared resources used across multiple pages:
 
-- `components/`: Reusable React components
-- `contexts/`: React context providers and consumers
-- `hooks/`: Custom React hooks
-- `layouts/`: Page layout components for routing
-- `utils/`: Helper functions and utilities
+- `components/`: Reusable React components.
+  - `atoms/`: Smallest UI elements (base buttons, inputs).
+  - `cards/`: UI cards for displaying content (audit log, proposal entries).
+  - `filters/`: UI elements for filtering data.
+  - `form/`: UI elements for submission forms.
+  - `layout/`: UI layout blocks (footer).
+  - `modals/`: UI popup dialogs (proposal modal).
+  - `navigation/`: Headers, footers, NavBar.
+  - `routes/`: Shared routing components (protected routes).
+  - `users/`: UI for user list.
+  - `utils/`: Helper wrappers (scroll top).
+- `contexts/`: React context providers and consumers.
+- `hooks/`: Custom React hooks.
+- `layouts/`: Page layout components for routing.
 
 ### `pages/`
 
 Contains components and logic for each unique page or set of related pages:
 
-- `account/`: User account-related pages (login, signup, profile)
-- `home/`: Homepage components
+- `account/`: User account-related pages (login, signup, profile).
+- `audit-log/`: Admin table view audit log for tracking website activity.
+- `browse/`: The public feed with submitted project ideas.
+- `dashboard/`: Admin data dashboard containing metrics.
+- `home/`: Landing page.
 - `not-found/`: 404 error page
+- `submit/`: The form where users submit new proposals.
 
 ### Root Files
 
 - `App.jsx`: Application entry point, contains:
-  - Global context providers
-  - Routing configuration
-  - Top-level layout
-- `App.css`: Global stylesheet
+  - Global context providers.
+  - Routing configuration.
+  - Top-level layout.
+- `App.css`: Global stylesheet.
+- `firebase-config.js`: Initializes Firebase SDK and exports authentication instance.
+- `vite.config.js`: Configures development server, pligins, and build processes.
 
 ## Protected Files
 
 The following files should not be modified directly:
 
 ```bash
-├── .vscode/           # VSCode settings
+├── .vscode/          # VSCode settings
 ├── build/            # Production build output
+├── .env              # Store environment keys
 ├── node_modules/     # Project dependencies
 ├── eslint.config.mjs # Linting configuration
 ├── jsconfig.json     # JS compilation settings
