@@ -21,16 +21,6 @@ const discoverProgramSidebar: SidebarsConfig = {
           id: "frontend/project-structure",
           label: "Project Structure",
         },
-        // {
-        //   type: "doc",
-        //   id: "frontend/development",
-        //   label: "Development Guide",
-        // },
-        // {
-        //   type: "doc",
-        //   id: "frontend/deployment",
-        //   label: "Deployment",
-        // },
         {
           type: "doc",
           id: "frontend/website-layout",
@@ -64,27 +54,6 @@ const discoverProgramSidebar: SidebarsConfig = {
         },
       ],
     },
-    // {
-    //   type: "category",
-    //   label: "Client Handoff Guide",
-    //   items: [
-    //     {
-    //       type: "doc",
-    //       id: "client-handoff/intro",
-    //       label: "Introduction",
-    //     },
-    //     {
-    //       type: "doc",
-    //       id: "client-handoff/requirements",
-    //       label: "Handoff Requirements",
-    //     },
-    //     {
-    //       type: "doc",
-    //       id: "client-handoff/sample-email",
-    //       label: "Sample Handoff Email",
-    //     },
-    //   ],
-    // },
   ],
 };
 
