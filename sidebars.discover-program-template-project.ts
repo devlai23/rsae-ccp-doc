@@ -26,6 +26,11 @@ const discoverProgramSidebar: SidebarsConfig = {
           id: "frontend/website-layout",
           label: "Website Layout",
         },
+        {
+          type: "doc",
+          id: "frontend/features",
+          label: "Features",
+        },
       ],
     },
     {
