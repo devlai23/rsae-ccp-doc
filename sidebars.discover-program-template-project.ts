@@ -61,8 +61,18 @@ const discoverProgramSidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "Handoff",
+      label: "Handoff Documentation",
       items: [
+        {
+          type: "doc",
+          id: "handoff/overview",
+          label: "Overview",
+        },
+        {
+          type: "doc",
+          id: "handoff/progress",
+          label: "Progress",
+        },
         {
           type: "doc",
           id: "handoff/next-steps",
