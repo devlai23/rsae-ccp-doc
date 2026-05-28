@@ -160,4 +160,4 @@ Backend server will start at `http://localhost:5050`.
 
 ## Next Step
 
-After setup is complete, continue to the [Backend Development Guide](./development) for workflow, endpoint details, and coding conventions.
+After setup is complete, continue to the [Backend Development Guide](./backend/development) for workflow, endpoint details, and coding conventions.

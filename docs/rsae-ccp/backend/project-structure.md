@@ -192,6 +192,6 @@ When adding new features to the backend:
 
 ## Related Pages
 
-- [Getting Started](./getting-started)
+- [Getting Started](../getting-started)
 - [Development Guide](./development)
 - [Deployment Guide](./deployment)
