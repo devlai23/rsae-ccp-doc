@@ -57,6 +57,43 @@ const discoverProgramSidebar: SidebarsConfig = {
           id: "backend/deployment",
           label: "Deployment",
         },
+        {
+          type: "doc",
+          id: "backend/contributing",
+          label: "Contributing",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Handoff",
+      items: [
+        {
+          type: "doc",
+          id: "handoff/next-steps",
+          label: "Next Steps",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Client Handoff Guide",
+      items: [
+        {
+          type: "doc",
+          id: "client-handoff/intro",
+          label: "Introduction",
+        },
+        {
+          type: "doc",
+          id: "client-handoff/requirements",
+          label: "Handoff Requirements",
+        },
+        {
+          type: "doc",
+          id: "client-handoff/sample-email",
+          label: "Sample Handoff Email",
+        },
       ],
     },
   ],
