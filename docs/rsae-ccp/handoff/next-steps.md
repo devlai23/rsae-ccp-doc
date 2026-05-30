@@ -1,7 +1,7 @@
 ---
 id: next-steps
 title: Next Steps
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 # Next Steps

@@ -65,6 +65,11 @@ const discoverProgramSidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
+          id: "handoff/overview",
+          label: "Overview",
+        },
+        {
+          type: "doc",
           id: "handoff/progress",
           label: "Progress",
         },
