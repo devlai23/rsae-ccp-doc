@@ -80,27 +80,27 @@ const discoverProgramSidebar: SidebarsConfig = {
         },
       ],
     },
-    {
-      type: "category",
-      label: "Client Handoff Guide",
-      items: [
-        {
-          type: "doc",
-          id: "client-handoff/intro",
-          label: "Introduction",
-        },
-        {
-          type: "doc",
-          id: "client-handoff/requirements",
-          label: "Handoff Requirements",
-        },
-        {
-          type: "doc",
-          id: "client-handoff/sample-email",
-          label: "Sample Handoff Email",
-        },
-      ],
-    },
+    // {
+    //   type: "category",
+    //   label: "Client Handoff Guide",
+    //   items: [
+    //     {
+    //       type: "doc",
+    //       id: "client-handoff/intro",
+    //       label: "Introduction",
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "client-handoff/requirements",
+    //       label: "Handoff Requirements",
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "client-handoff/sample-email",
+    //       label: "Sample Handoff Email",
+    //     },
+    //   ],
+    // },
   ],
 };
 
